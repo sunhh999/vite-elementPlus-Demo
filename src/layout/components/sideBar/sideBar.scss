@@ -1,0 +1,27 @@
+.sideBar-wapper {
+	width: $sideBarWidth;
+	background-color: $subMenuBg;
+
+	.el-menu {
+		border-right: 0px;
+		// 修改菜单的背景色
+		--el-menu-bg-color: $subMenuBg;
+
+		.el-sub-menu__title,
+		.el-menu-item {
+			color: $subMenuText;
+			&:hover {
+				color: $subMenuHoverText;
+			}
+		}
+
+		.el-menu-item.is-active {
+			color: $subMenuActiveText;
+		}
+	}
+
+	// 收缩起来的宽度
+	.el-menu--collapse {
+		width: $sideBarShrinkWidth;
+	}
+}

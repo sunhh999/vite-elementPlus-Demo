@@ -1,0 +1,37 @@
+// sidebar
+
+// 侧边栏
+$sideBarWidth: 200px;
+$sideBarShrinkWidth: 60px;
+
+$subMenuBg: #1f2d3d;
+$subMenuText: #fff;
+$subMenuHoverText: red;
+$subMenuActiveText: black;
+
+// header 高度
+$headNavHeight: 60px;
+
+// fotter
+$footerHeight: 60px;
+
+// $menuActiveText: #ffffff;
+
+// $menuBg: #304156;
+// $menuHover: #263445;
+
+// $subMenuHover: #001528;
+
+// JS 与 scss 共享变量，在 scss 中通过 :export 进行导出，在 js 中可通过 ESM 进行导入
+:export {
+	headNavHeight: $headNavHeight;
+	subMenuText: $subMenuText;
+	footerHeight: $footerHeight;
+	sideBarWidth: $sideBarWidth;
+	// subMenuActiveText: $subMenuActiveText;
+
+	// menuBg: $menuBg;
+	// menuHover: $menuHover;
+	// subMenuBg: $subMenuBg;
+	// subMenuHover: $subMenuHover;
+}

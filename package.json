@@ -1,0 +1,45 @@
+{
+	"name": "vite-vue3-elementplus",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"lint-staged": {
+		"*.{vue,js,ts}": "eslint --fix"
+	},
+	"scripts": {
+		"start": "vite",
+		"dev": "vite",
+		"build": "vue-tsc --noEmit && vite build",
+		"preview": "vite preview",
+		"prepare": "husky install"
+	},
+	"dependencies": {
+		"axios": "^0.27.2",
+		"element-plus": "^2.2.9",
+		"vue": "^3.2.37",
+		"vue-router": "^4.0.13"
+	},
+	"devDependencies": {
+		"@element-plus/icons-vue": "^2.0.6",
+		"@types/node": "^18.0.4",
+		"@typescript-eslint/eslint-plugin": "^5.30.7",
+		"@typescript-eslint/parser": "^5.0.0",
+		"@vitejs/plugin-vue": "^3.0.0",
+		"eslint": "^7.32.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-import": "^2.25.2",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-vue": "^9.2.0",
+		"husky": "^7.0.0",
+		"lint-staged": "^13.0.3",
+		"pinia": "^2.0.16",
+		"prettier": "^2.7.1",
+		"sass": "^1.53.0",
+		"typescript": "^4.6.4",
+		"unplugin-auto-import": "^0.9.2",
+		"unplugin-vue-components": "^0.21.1",
+		"vite": "^3.0.0",
+		"vue-tsc": "^0.38.4"
+	}
+}
